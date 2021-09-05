@@ -64,12 +64,5 @@ public class yunsuanfu {
         System.out.println(k%=l);
         //条件运算符
 
-
-
-
-
-
-
-
     }
 }
