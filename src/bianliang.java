@@ -13,6 +13,9 @@ public class bianliang {
     public static void main(String[] args){
         bianliang bl =new bianliang();
         bl.AddAge();
+        System.out.println(bl);
 
     }
+    //类变量
+
 }
