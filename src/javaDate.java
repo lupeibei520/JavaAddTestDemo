@@ -8,6 +8,6 @@ import java.util.*;
 public class javaDate {
     public static void  main(String[]args){
         Date data = new Date();
-        System.out.println(data.toString());
+        System.out.println(data.getTime());
     }
 }

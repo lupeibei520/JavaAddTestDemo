@@ -62,6 +62,7 @@ public class ArrayClass {
         System.out.println(myJy);
         LinkedHashSet<Integer> hashSet = new LinkedHashSet<>(myJy);
         ArrayList<Integer> listWithoutDuplicates = new ArrayList<>(hashSet);
+        Arrays.sort(listWithoutDuplicates);
 
         //数组从小到大排序
 
