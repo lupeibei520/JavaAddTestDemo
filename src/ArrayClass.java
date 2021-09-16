@@ -2,12 +2,12 @@ import com.sun.deploy.util.ArrayUtil;
 
 import  java.util.*;
 import java.lang.reflect.Array;
-//import java.util.Arrays;
-//import java.util.Scanner;
-//import java.util.List;
-//import java.util.LinkedHashSet;
-//import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.List;
+import java.util.LinkedHashSet;
+import java.util.ArrayList;
+import java.util.Collections;
 /**
  * @author lupeibei
  * @date 2021/9/10 12:45 下午
@@ -55,6 +55,17 @@ public class ArrayClass {
 //        LinkedHashSet<Integer> hashSet = new LinkedHashSet<>(myJy);
 //        ArrayList<Integer> listWithoutDuplicates = new ArrayList<>(hashSet);
 //        System.out.println(listWithoutDuplicates);
+        //数组从小到大排序
+//        ArrayList<Integer> myList = new ArrayList<> (Arrays.asList(15,13,243,34,23,87,23,45,23,10));
+//        ArrayList<Integer> myJy = new ArrayList<> (myList.subList(3,8));
+//        myJy.addAll(myList);
+//        System.out.println(myJy);
+//        LinkedHashSet<Integer> hashSet = new LinkedHashSet<>(myJy);
+//        ArrayList<Integer> listWithoutDuplicates = new ArrayList<>(hashSet);
+//        Collections.sort(listWithoutDuplicates);
+//        System.out.println(listWithoutDuplicates);
+//        Arrays.sort(listWithoutDuplicates);
+
         //数组从大到小排序
         ArrayList<Integer> myList = new ArrayList<> (Arrays.asList(15,13,243,34,23,87,23,45,23,10));
         ArrayList<Integer> myJy = new ArrayList<> (myList.subList(3,8));
@@ -62,11 +73,14 @@ public class ArrayClass {
         System.out.println(myJy);
         LinkedHashSet<Integer> hashSet = new LinkedHashSet<>(myJy);
         ArrayList<Integer> listWithoutDuplicates = new ArrayList<>(hashSet);
-        Collection.sort(myJy);
-        System.out.println(myJy);
-//        Arrays.sort(listWithoutDuplicates);
+        Collections.sort(listWithoutDuplicates, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        System.out.println(Arrays.sort(listWithoutDuplicates));
 
-        //数组从小到大排序
 
 //数列中每个数都增加2
 //        for (int i =0;i<myList.length;i++){
