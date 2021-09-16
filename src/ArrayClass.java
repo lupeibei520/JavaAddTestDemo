@@ -7,7 +7,7 @@ import java.lang.reflect.Array;
 //import java.util.List;
 //import java.util.LinkedHashSet;
 //import java.util.ArrayList;
-//import java.util.Collection;
+import java.util.Collection;
 /**
  * @author lupeibei
  * @date 2021/9/10 12:45 下午
@@ -62,7 +62,9 @@ public class ArrayClass {
         System.out.println(myJy);
         LinkedHashSet<Integer> hashSet = new LinkedHashSet<>(myJy);
         ArrayList<Integer> listWithoutDuplicates = new ArrayList<>(hashSet);
-        Arrays.sort(listWithoutDuplicates);
+        Collection.sort(myJy);
+        System.out.println(myJy);
+//        Arrays.sort(listWithoutDuplicates);
 
         //数组从小到大排序
 
